@@ -1,0 +1,33 @@
+\hypertarget{group___p_i_d}{}\section{P\+ID}
+\label{group___p_i_d}\index{P\+ID@{P\+ID}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___p_i_d_ga8ad7dae0db3f1e99cd31a5ab75aaaf67}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+MP}~(75)\hypertarget{group___p_i_d_ga8ad7dae0db3f1e99cd31a5ab75aaaf67}{}\label{group___p_i_d_ga8ad7dae0db3f1e99cd31a5ab75aaaf67}
+
+\begin{DoxyCompactList}\small\item\em Default desired temperature of black box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___p_i_d_ga2da744d736fb7d62aabcabf123a6a73e}{task\+P\+ID} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+I\+D.\+c -\/ P\+ID controller module. 
+
+\subsection{Function Documentation}
+\index{P\+ID@{P\+ID}!task\+P\+ID@{task\+P\+ID}}
+\index{task\+P\+ID@{task\+P\+ID}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{task\+P\+I\+D()}{taskPID()}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+P\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_ga2da744d736fb7d62aabcabf123a6a73e}{}\label{group___p_i_d_ga2da744d736fb7d62aabcabf123a6a73e}
+void \hyperlink{group___p_i_d_ga2da744d736fb7d62aabcabf123a6a73e}{task\+P\+I\+D()}
+
+This task compares the temperature value in {\itshape temp\+\_\+queue}, or the measured temperature inside the black box, and compares it to the desired black box temperature. Using the difference between measured and desired temp, a new ratio of heater on/off time is created. This ratio is stored in P\+W\+M\+\_\+ratio for use by the power driver module to control the heater and adjust black box temp as needed. The desired temp will default to {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+MP} unless the user has specified a desired temp.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
