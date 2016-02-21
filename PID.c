@@ -34,8 +34,11 @@ void taskPID() {
 	
 	WHILE running
 	{
-		IF user_input_flag is valid 
+		IF user_input_flag is valid
+		{ 
 			< set desired temp to user input temp >
+			< set user_input_flag to FALSE >
+		}
 		temp_queue is not empty
 		{
 			< compare temp_queue value to desired_temp to generate error term >

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Black Box: Modules</title>
+<title>Black Box: PowerDrive</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -73,19 +73,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Modules</div>  </div>
+<div class="title">PowerDrive</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all modules:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___a_d_c.html" target="_self">ADC</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___p_i_d.html" target="_self">PID</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___power_drive.html" target="_self">PowerDrive</a></td><td class="desc"></td></tr>
-<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__temp_calc.html" target="_self">TempCalc</a></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___u_s_b.html" target="_self">USB</a></td><td class="desc"></td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga508895e2872301377a23deba8fefa96a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___power_drive.html#ga508895e2872301377a23deba8fefa96a">taskPowerDrive</a> (uint32_t GPIO_pwr_out)</td></tr>
+<tr class="separator:ga508895e2872301377a23deba8fefa96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>powerDrive.c - Power Driver module. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga508895e2872301377a23deba8fefa96a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void taskPowerDrive </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>GPIO_pwr_out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>void <a class="el" href="group___power_drive.html#ga508895e2872301377a23deba8fefa96a">taskPowerDrive()</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GPIO_pwr_out</td><td>is the GPIO pin used for PWM output signal to resistor/heater inside black box.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This task is used to determine the output signal to the resistor/heater inside the black box. It will adjust the PWM signal used to drive the GPIO connected to the heater system, and therefore the temp of the black box, according to input from PID controller module.</p>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

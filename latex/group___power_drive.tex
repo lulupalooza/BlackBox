@@ -1,0 +1,32 @@
+\hypertarget{group___power_drive}{}\section{Power\+Drive}
+\label{group___power_drive}\index{Power\+Drive@{Power\+Drive}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___power_drive_ga508895e2872301377a23deba8fefa96a}{task\+Power\+Drive} (uint32\+\_\+t G\+P\+I\+O\+\_\+pwr\+\_\+out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+power\+Drive.\+c -\/ Power Driver module. 
+
+\subsection{Function Documentation}
+\index{Power\+Drive@{Power\+Drive}!task\+Power\+Drive@{task\+Power\+Drive}}
+\index{task\+Power\+Drive@{task\+Power\+Drive}!Power\+Drive@{Power\+Drive}}
+\subsubsection[{\texorpdfstring{task\+Power\+Drive(uint32\+\_\+t G\+P\+I\+O\+\_\+pwr\+\_\+out)}{taskPowerDrive(uint32_t GPIO_pwr_out)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+Power\+Drive (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{G\+P\+I\+O\+\_\+pwr\+\_\+out}
+\end{DoxyParamCaption}
+)}\hypertarget{group___power_drive_ga508895e2872301377a23deba8fefa96a}{}\label{group___power_drive_ga508895e2872301377a23deba8fefa96a}
+void \hyperlink{group___power_drive_ga508895e2872301377a23deba8fefa96a}{task\+Power\+Drive()}
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\+P\+I\+O\+\_\+pwr\+\_\+out} & is the G\+P\+IO pin used for P\+WM output signal to resistor/heater inside black box.\\
+\hline
+\end{DoxyParams}
+This task is used to determine the output signal to the resistor/heater inside the black box. It will adjust the P\+WM signal used to drive the G\+P\+IO connected to the heater system, and therefore the temp of the black box, according to input from P\+ID controller module.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
