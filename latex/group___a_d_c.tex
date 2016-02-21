@@ -1,0 +1,34 @@
+\hypertarget{group___a_d_c}{}\section{A\+DC}
+\label{group___a_d_c}\index{A\+DC@{A\+DC}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___a_d_c_ga1365a853a2f6c0826277c578a30cf503}{task\+A\+D\+Csample} (uint32\+\_\+t A\+D\+C\+\_\+base, uint32\+\_\+t Sample\+\_\+\+Sequencer, uint32\+\_\+t $\ast$A\+D\+C\+\_\+queue)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+adc.\+c -\/ A\+DC driver module. 
+
+\subsection{Function Documentation}
+\index{A\+DC@{A\+DC}!task\+A\+D\+Csample@{task\+A\+D\+Csample}}
+\index{task\+A\+D\+Csample@{task\+A\+D\+Csample}!A\+DC@{A\+DC}}
+\subsubsection[{\texorpdfstring{task\+A\+D\+Csample(uint32\+\_\+t A\+D\+C\+\_\+base, uint32\+\_\+t Sample\+\_\+\+Sequencer, uint32\+\_\+t $\ast$\+A\+D\+C\+\_\+queue)}{taskADCsample(uint32_t ADC_base, uint32_t Sample_Sequencer, uint32_t *ADC_queue)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+A\+D\+Csample (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{A\+D\+C\+\_\+base, }
+\item[{uint32\+\_\+t}]{Sample\+\_\+\+Sequencer, }
+\item[{uint32\+\_\+t $\ast$}]{A\+D\+C\+\_\+queue}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_ga1365a853a2f6c0826277c578a30cf503}{}\label{group___a_d_c_ga1365a853a2f6c0826277c578a30cf503}
+void task\+A\+D\+Csample(uint32\+\_\+t A\+D\+C\+\_\+base, uint32\+\_\+t Sample\+\_\+\+Sequencer, uint32\+\_\+t $\ast$\+A\+D\+C\+\_\+queue)
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\+D\+C\+\_\+base} & is the base address of the A\+DC module. \\
+\hline
+{\em Sample\+\_\+\+Sequencer} & is the sample sequence number. \\
+\hline
+{\em A\+D\+C\+\_\+queue} & is the buffer where the A\+DC conversion data is stored.\\
+\hline
+\end{DoxyParams}
+This function triggers an A\+DC conversion and copies data from the specified sample sequencer output F\+I\+FO to {\itshape A\+D\+C\+\_\+queue} upon completion of the conversion. {\itshape A\+D\+C\+\_\+queue} must be set up to accomodate all conversion values in A\+DC F\+I\+FO. 
