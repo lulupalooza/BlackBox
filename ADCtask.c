@@ -23,7 +23,7 @@
 void taskADCsample(uint32_t ADC_base, uint32_t Sample_Sequencer,
                    uint32_t *ADC_queue) {
 
-	< Enable ADC - ADC_base >
+	< Enable and initialize ADC - ADC_base >
 	< Enable ADC Sample Sequencer: ADC_ACTSS >
 
 	WHILE running

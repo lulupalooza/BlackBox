@@ -1,0 +1,48 @@
+\hypertarget{group__usb}{}\section{Usb}
+\label{group__usb}\index{Usb@{Usb}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__usb_ga84d08e2f2642a695efe7c4cce6bc4624}{task\+U\+SB} (uint32\+\_\+t U\+S\+B\+\_\+base)
+\item 
+void \hyperlink{group__usb_gaf0cac203a4bc1187379ff27323e3448d}{U\+S\+B\+\_\+irq} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+usb.\+c -\/ usb module. 
+
+\subsection{Function Documentation}
+\index{Usb@{Usb}!task\+U\+SB@{task\+U\+SB}}
+\index{task\+U\+SB@{task\+U\+SB}!Usb@{Usb}}
+\subsubsection[{\texorpdfstring{task\+U\+S\+B(uint32\+\_\+t U\+S\+B\+\_\+base)}{taskUSB(uint32_t USB_base)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+U\+SB (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{U\+S\+B\+\_\+base}
+\end{DoxyParamCaption}
+)}\hypertarget{group__usb_ga84d08e2f2642a695efe7c4cce6bc4624}{}\label{group__usb_ga84d08e2f2642a695efe7c4cce6bc4624}
+void \hyperlink{group__usb_ga84d08e2f2642a695efe7c4cce6bc4624}{task\+U\+S\+B()}
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+S\+B\+\_\+base} & is the base address of the U\+SB module.\\
+\hline
+\end{DoxyParams}
+This task is used to send measurement data about the black box system to the user/\+PC via U\+SB. It is also used to check for a user input desired temperature.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\index{Usb@{Usb}!U\+S\+B\+\_\+irq@{U\+S\+B\+\_\+irq}}
+\index{U\+S\+B\+\_\+irq@{U\+S\+B\+\_\+irq}!Usb@{Usb}}
+\subsubsection[{\texorpdfstring{U\+S\+B\+\_\+irq()}{USB_irq()}}]{\setlength{\rightskip}{0pt plus 5cm}void U\+S\+B\+\_\+irq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__usb_gaf0cac203a4bc1187379ff27323e3448d}{}\label{group__usb_gaf0cac203a4bc1187379ff27323e3448d}
+void \hyperlink{group__usb_gaf0cac203a4bc1187379ff27323e3448d}{U\+S\+B\+\_\+irq()}
+
+Interrupt handler for U\+SB. Triggers when user input received via U\+SB.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

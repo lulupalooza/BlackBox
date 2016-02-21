@@ -38,7 +38,7 @@ void taskPID() {
 			< set desired temp to user input temp >
 		temp_queue is not empty
 		{
-			< compare temp_queue value to /e desired_temp to generate error term >
+			< compare temp_queue value to desired_temp to generate error term >
 		}
 		
 		< set PWM_ratio validity to FALSE >
