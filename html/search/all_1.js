@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['taskadcsample',['taskADCsample',['../group___a_d_c.html#ga1365a853a2f6c0826277c578a30cf503',1,'ADCtask.c']]]
+  ['default_5ftemp',['DEFAULT_TEMP',['../group___p_i_d.html#ga8ad7dae0db3f1e99cd31a5ab75aaaf67',1,'PID.c']]]
 ];
