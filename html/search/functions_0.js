@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['taskadcsample',['taskADCsample',['../group___a_d_c.html#ga1365a853a2f6c0826277c578a30cf503',1,'ADCtask.c']]],
-  ['taskpid',['taskPID',['../group___p_i_d.html#ga2da744d736fb7d62aabcabf123a6a73e',1,'PID.c']]],
-  ['taskpowerdrive',['taskPowerDrive',['../group___power_drive.html#ga508895e2872301377a23deba8fefa96a',1,'PowerDrive.c']]],
-  ['tasktempcalc',['taskTempCalc',['../group__temp_calc.html#gac28844c36e35938d725836736f81523f',1,'tempCalc.c']]],
-  ['taskusb',['taskUSB',['../group___u_s_b.html#ga84d08e2f2642a695efe7c4cce6bc4624',1,'USB.c']]]
+  ['getadcsamplerate',['getADCSampleRate',['../group___a_d_c.html#ga6de35339071e6a8b3739dd8fda53af5a',1,'ADCman.c']]],
+  ['getdcomponent',['getDComponent',['../group___p_i_d.html#gac2922b0fd1a0420148ca2a5f45a51783',1,'PIDman.c']]],
+  ['geticomponent',['getIComponent',['../group___p_i_d.html#gaa0469898df39f3825fab1b00a925d7b8',1,'PIDman.c']]],
+  ['getpcomponent',['getPComponent',['../group___p_i_d.html#gabbaa1e313335edc4c0f70348b7982db5',1,'PIDman.c']]],
+  ['getpidchange',['getPIDChange',['../group___p_i_d.html#ga62096a430c86601ca8bed3fd5d07809b',1,'PIDman.c']]],
+  ['getpowerout',['getPowerOut',['../group___power.html#ga5fab0b147407ae7b547e4fa7fe95a81e',1,'PowerMan.c']]],
+  ['gettempdata',['getTempData',['../group___temp.html#ga453f2d268569ef39e05b3cadae501754',1,'tempMan.c']]],
+  ['gettemperaturetarget',['getTemperatureTarget',['../group___p_i_d.html#gad81dd2cc227ebb576a249612dcd6eb7d',1,'PIDman.c']]]
 ];

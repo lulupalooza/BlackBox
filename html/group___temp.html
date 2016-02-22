@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Black Box: Modules</title>
+<title>Black Box: Temp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -73,19 +73,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Modules</div>  </div>
+<div class="title">Temp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all modules:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___a_d_c.html" target="_self">ADC</a></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___p_i_d.html" target="_self">PID</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___power.html" target="_self">Power</a></td><td class="desc"></td></tr>
-<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___temp.html" target="_self">Temp</a></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group___u_s_b.html" target="_self">USB</a></td><td class="desc"></td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac28844c36e35938d725836736f81523f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___temp.html#gac28844c36e35938d725836736f81523f">taskTempCalc</a> ()</td></tr>
+<tr class="separator:gac28844c36e35938d725836736f81523f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga453f2d268569ef39e05b3cadae501754"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___temp.html#ga453f2d268569ef39e05b3cadae501754">getTempData</a> ()</td></tr>
+<tr class="separator:ga453f2d268569ef39e05b3cadae501754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>tempCalc.c - Module to convert ADC voltage readings to temperature.</p>
+<p>tempMan.c - Module </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga453f2d268569ef39e05b3cadae501754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t getTempData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>uint32_t <a class="el" href="group___temp.html#ga453f2d268569ef39e05b3cadae501754">getTempData()</a></p>
+<p>This method retrieves the most recent temperature readings and stores them for use by other modules.</p>
+<dl class="section return"><dt>Returns</dt><dd>The most recent temperature reading. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac28844c36e35938d725836736f81523f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void taskTempCalc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>void <a class="el" href="group___temp.html#gac28844c36e35938d725836736f81523f">taskTempCalc()</a></p>
+<p>This task calculates the temperature inside the black box based on the ADC reading stored in <em>ADC_queue</em>. It stores the calculated temperature value in <em>temp_queue</em> for the PID module to utilize.</p>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

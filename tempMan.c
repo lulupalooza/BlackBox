@@ -1,6 +1,6 @@
 //*****************************************************************************
 //!
-//! tempCalc.c - Module to convert ADC voltage readings to temperature. 
+//! tempMan.c - Module  
 //!
 //! \addtogroup Temp
 //! @{
@@ -8,24 +8,20 @@
 
 //*****************************************************************************
 //!
-//! void taskTempCalc()
+//! uint32_t getTempData()
 //!
-//! This task calculates the temperature inside the black box based
-//! on the ADC reading stored in \e ADC_queue. It stores the calculated
-//! temperature value in \e temp_queue for the PID module to utilize.
+//! This method retrieves the most recent temperature readings and stores them
+//! for use by other modules.
 //!
-//! \return None.
+//! \return The most recent temperature reading.
 //*****************************************************************************
-void taskTempCalc() {
-
-	WHILE running
+uint32_t getTempData()
+{
+	IF temp_queue is not empty
 	{
-		IF ADC_queue is not empty
-		{
-			< convert queue value to temperature (m*queue value + b) >
-			< copy ADC value to temp_queue >
-		}
+		< update stored temperature value >
 	}
+	< return stored temperature value >
 }
 
 //*****************************************************************************

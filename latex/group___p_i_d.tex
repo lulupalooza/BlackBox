@@ -10,13 +10,116 @@
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{group___p_i_d_ga2da744d736fb7d62aabcabf123a6a73e}{task\+P\+ID} ()
+\item 
+uint32\+\_\+t \hyperlink{group___p_i_d_gad81dd2cc227ebb576a249612dcd6eb7d}{get\+Temperature\+Target} ()
+\item 
+void \hyperlink{group___p_i_d_ga5af428ce00f41361a218592fee843315}{set\+Temperature\+Target} (uint32\+\_\+t temperature)
+\item 
+float \hyperlink{group___p_i_d_gabbaa1e313335edc4c0f70348b7982db5}{get\+P\+Component} ()
+\item 
+float \hyperlink{group___p_i_d_gaa0469898df39f3825fab1b00a925d7b8}{get\+I\+Component} ()
+\item 
+float \hyperlink{group___p_i_d_gac2922b0fd1a0420148ca2a5f45a51783}{get\+D\+Component} ()
+\item 
+float \hyperlink{group___p_i_d_ga62096a430c86601ca8bed3fd5d07809b}{get\+P\+I\+D\+Change} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-P\+I\+D.\+c -\/ P\+ID controller module. 
+P\+I\+D.\+c -\/ P\+ID controller module.
+
+P\+I\+Dman.\+c -\/ P\+ID controller management module. 
 
 \subsection{Function Documentation}
+\index{P\+ID@{P\+ID}!get\+D\+Component@{get\+D\+Component}}
+\index{get\+D\+Component@{get\+D\+Component}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{get\+D\+Component()}{getDComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}float get\+D\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_gac2922b0fd1a0420148ca2a5f45a51783}{}\label{group___p_i_d_gac2922b0fd1a0420148ca2a5f45a51783}
+float \hyperlink{group___p_i_d_gac2922b0fd1a0420148ca2a5f45a51783}{get\+D\+Component()}
+
+This method is used to retrieve the contribution of the D component to the total change requested by the P\+ID controller.
+
+\begin{DoxyReturn}{Returns}
+The current D contribution to the change requested by the P\+ID controller. 
+\end{DoxyReturn}
+\index{P\+ID@{P\+ID}!get\+I\+Component@{get\+I\+Component}}
+\index{get\+I\+Component@{get\+I\+Component}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{get\+I\+Component()}{getIComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}float get\+I\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_gaa0469898df39f3825fab1b00a925d7b8}{}\label{group___p_i_d_gaa0469898df39f3825fab1b00a925d7b8}
+float \hyperlink{group___p_i_d_gaa0469898df39f3825fab1b00a925d7b8}{get\+I\+Component()}
+
+This method is used to retrieve the contribution of the I component to the total change requested by the P\+ID controller.
+
+\begin{DoxyReturn}{Returns}
+The current I contribution to the change requested by the P\+ID controller. 
+\end{DoxyReturn}
+\index{P\+ID@{P\+ID}!get\+P\+Component@{get\+P\+Component}}
+\index{get\+P\+Component@{get\+P\+Component}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{get\+P\+Component()}{getPComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}float get\+P\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_gabbaa1e313335edc4c0f70348b7982db5}{}\label{group___p_i_d_gabbaa1e313335edc4c0f70348b7982db5}
+float \hyperlink{group___p_i_d_gabbaa1e313335edc4c0f70348b7982db5}{get\+P\+Component()}
+
+This method is used to retrieve the contribution of the P component to the total change requested by the P\+ID controller.
+
+\begin{DoxyReturn}{Returns}
+The current P contribution to the change requested by the P\+ID controller. 
+\end{DoxyReturn}
+\index{P\+ID@{P\+ID}!get\+P\+I\+D\+Change@{get\+P\+I\+D\+Change}}
+\index{get\+P\+I\+D\+Change@{get\+P\+I\+D\+Change}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{get\+P\+I\+D\+Change()}{getPIDChange()}}]{\setlength{\rightskip}{0pt plus 5cm}float get\+P\+I\+D\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_ga62096a430c86601ca8bed3fd5d07809b}{}\label{group___p_i_d_ga62096a430c86601ca8bed3fd5d07809b}
+float \hyperlink{group___p_i_d_ga62096a430c86601ca8bed3fd5d07809b}{get\+P\+I\+D\+Change()}
+
+This method is used to retrieve the total change requested by the P\+ID controller.
+
+\begin{DoxyReturn}{Returns}
+The current change requested by the P\+ID controller. 
+\end{DoxyReturn}
+\index{P\+ID@{P\+ID}!get\+Temperature\+Target@{get\+Temperature\+Target}}
+\index{get\+Temperature\+Target@{get\+Temperature\+Target}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{get\+Temperature\+Target()}{getTemperatureTarget()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t get\+Temperature\+Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_gad81dd2cc227ebb576a249612dcd6eb7d}{}\label{group___p_i_d_gad81dd2cc227ebb576a249612dcd6eb7d}
+uint32\+\_\+t \hyperlink{group___p_i_d_gad81dd2cc227ebb576a249612dcd6eb7d}{get\+Temperature\+Target()}
+
+This method is used to retrieve the current target temperature of the P\+ID controller.
+
+\begin{DoxyReturn}{Returns}
+The current temperature target. 
+\end{DoxyReturn}
+\index{P\+ID@{P\+ID}!set\+Temperature\+Target@{set\+Temperature\+Target}}
+\index{set\+Temperature\+Target@{set\+Temperature\+Target}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{set\+Temperature\+Target(uint32\+\_\+t temperature)}{setTemperatureTarget(uint32_t temperature)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Temperature\+Target (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{temperature}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_i_d_ga5af428ce00f41361a218592fee843315}{}\label{group___p_i_d_ga5af428ce00f41361a218592fee843315}
+void \hyperlink{group___p_i_d_ga5af428ce00f41361a218592fee843315}{set\+Temperature\+Target()}
+
+This method is used to set the target temperature of the P\+ID controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em temperature} & is the new target temperature.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
 \index{P\+ID@{P\+ID}!task\+P\+ID@{task\+P\+ID}}
 \index{task\+P\+ID@{task\+P\+ID}!P\+ID@{P\+ID}}
 \subsubsection[{\texorpdfstring{task\+P\+I\+D()}{taskPID()}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+P\+ID (

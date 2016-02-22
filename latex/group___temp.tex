@@ -1,0 +1,45 @@
+\hypertarget{group___temp}{}\section{Temp}
+\label{group___temp}\index{Temp@{Temp}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___temp_gac28844c36e35938d725836736f81523f}{task\+Temp\+Calc} ()
+\item 
+uint32\+\_\+t \hyperlink{group___temp_ga453f2d268569ef39e05b3cadae501754}{get\+Temp\+Data} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+temp\+Calc.\+c -\/ Module to convert A\+DC voltage readings to temperature.
+
+temp\+Man.\+c -\/ Module 
+
+\subsection{Function Documentation}
+\index{Temp@{Temp}!get\+Temp\+Data@{get\+Temp\+Data}}
+\index{get\+Temp\+Data@{get\+Temp\+Data}!Temp@{Temp}}
+\subsubsection[{\texorpdfstring{get\+Temp\+Data()}{getTempData()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t get\+Temp\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___temp_ga453f2d268569ef39e05b3cadae501754}{}\label{group___temp_ga453f2d268569ef39e05b3cadae501754}
+uint32\+\_\+t \hyperlink{group___temp_ga453f2d268569ef39e05b3cadae501754}{get\+Temp\+Data()}
+
+This method retrieves the most recent temperature readings and stores them for use by other modules.
+
+\begin{DoxyReturn}{Returns}
+The most recent temperature reading. 
+\end{DoxyReturn}
+\index{Temp@{Temp}!task\+Temp\+Calc@{task\+Temp\+Calc}}
+\index{task\+Temp\+Calc@{task\+Temp\+Calc}!Temp@{Temp}}
+\subsubsection[{\texorpdfstring{task\+Temp\+Calc()}{taskTempCalc()}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+Temp\+Calc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___temp_gac28844c36e35938d725836736f81523f}{}\label{group___temp_gac28844c36e35938d725836736f81523f}
+void \hyperlink{group___temp_gac28844c36e35938d725836736f81523f}{task\+Temp\+Calc()}
+
+This task calculates the temperature inside the black box based on the A\+DC reading stored in {\itshape A\+D\+C\+\_\+queue}. It stores the calculated temperature value in {\itshape temp\+\_\+queue} for the P\+ID module to utilize.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

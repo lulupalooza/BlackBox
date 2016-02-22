@@ -1,0 +1,50 @@
+\hypertarget{group___power}{}\section{Power}
+\label{group___power}\index{Power@{Power}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___power_ga508895e2872301377a23deba8fefa96a}{task\+Power\+Drive} (uint32\+\_\+t G\+P\+I\+O\+\_\+pwr\+\_\+out)
+\item 
+uint32\+\_\+t \hyperlink{group___power_ga5fab0b147407ae7b547e4fa7fe95a81e}{get\+Power\+Out} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+power\+Drive.\+c -\/ Power Driver module.
+
+Power\+Man.\+c -\/ Module 
+
+\subsection{Function Documentation}
+\index{Power@{Power}!get\+Power\+Out@{get\+Power\+Out}}
+\index{get\+Power\+Out@{get\+Power\+Out}!Power@{Power}}
+\subsubsection[{\texorpdfstring{get\+Power\+Out()}{getPowerOut()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t get\+Power\+Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___power_ga5fab0b147407ae7b547e4fa7fe95a81e}{}\label{group___power_ga5fab0b147407ae7b547e4fa7fe95a81e}
+uint32\+\_\+t \hyperlink{group___power_ga5fab0b147407ae7b547e4fa7fe95a81e}{get\+Power\+Out()}
+
+This method retrieves the current power output to the black box oven.
+
+\begin{DoxyReturn}{Returns}
+The current power output to the black box oven. 
+\end{DoxyReturn}
+\index{Power@{Power}!task\+Power\+Drive@{task\+Power\+Drive}}
+\index{task\+Power\+Drive@{task\+Power\+Drive}!Power@{Power}}
+\subsubsection[{\texorpdfstring{task\+Power\+Drive(uint32\+\_\+t G\+P\+I\+O\+\_\+pwr\+\_\+out)}{taskPowerDrive(uint32_t GPIO_pwr_out)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+Power\+Drive (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{G\+P\+I\+O\+\_\+pwr\+\_\+out}
+\end{DoxyParamCaption}
+)}\hypertarget{group___power_ga508895e2872301377a23deba8fefa96a}{}\label{group___power_ga508895e2872301377a23deba8fefa96a}
+void \hyperlink{group___power_ga508895e2872301377a23deba8fefa96a}{task\+Power\+Drive()}
+
+
+\begin{DoxyParams}{Parameters}
+{\em G\+P\+I\+O\+\_\+pwr\+\_\+out} & is the G\+P\+IO pin used for P\+WM output signal to resistor/heater inside black box.\\
+\hline
+\end{DoxyParams}
+This task is used to determine the output signal to the resistor/heater inside the black box. It will adjust the P\+WM signal used to drive the G\+P\+IO connected to the heater system, and therefore the temp of the black box, according to input from P\+ID controller module.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

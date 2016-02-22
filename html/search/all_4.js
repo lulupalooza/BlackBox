@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['usb',['USB',['../group___u_s_b.html',1,'']]],
-  ['usb_5firq',['USB_irq',['../group___u_s_b.html#gaf0cac203a4bc1187379ff27323e3448d',1,'USB.c']]]
+  ['setadcsamplerate',['setADCSampleRate',['../group___a_d_c.html#ga2a0f9e472b72054c6ae59882d336f014',1,'ADCman.c']]],
+  ['settemperaturetarget',['setTemperatureTarget',['../group___p_i_d.html#ga5af428ce00f41361a218592fee843315',1,'PIDman.c']]]
 ];

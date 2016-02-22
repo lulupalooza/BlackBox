@@ -49,7 +49,8 @@ void taskUSB(uint32_t USB_base) {
 void USB_irq() {
 	
 	< read input value from USB receive buffer >
-	< set user_input_temp to received value > 
+	< set user_input_temp to received value >
+}
 	
 //*****************************************************************************
 //

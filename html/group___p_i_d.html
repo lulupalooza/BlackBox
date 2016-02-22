@@ -92,10 +92,138 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga2da744d736fb7d62aabcabf123a6a73e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#ga2da744d736fb7d62aabcabf123a6a73e">taskPID</a> ()</td></tr>
 <tr class="separator:ga2da744d736fb7d62aabcabf123a6a73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad81dd2cc227ebb576a249612dcd6eb7d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#gad81dd2cc227ebb576a249612dcd6eb7d">getTemperatureTarget</a> ()</td></tr>
+<tr class="separator:gad81dd2cc227ebb576a249612dcd6eb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5af428ce00f41361a218592fee843315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#ga5af428ce00f41361a218592fee843315">setTemperatureTarget</a> (uint32_t temperature)</td></tr>
+<tr class="separator:ga5af428ce00f41361a218592fee843315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbaa1e313335edc4c0f70348b7982db5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#gabbaa1e313335edc4c0f70348b7982db5">getPComponent</a> ()</td></tr>
+<tr class="separator:gabbaa1e313335edc4c0f70348b7982db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0469898df39f3825fab1b00a925d7b8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#gaa0469898df39f3825fab1b00a925d7b8">getIComponent</a> ()</td></tr>
+<tr class="separator:gaa0469898df39f3825fab1b00a925d7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2922b0fd1a0420148ca2a5f45a51783"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#gac2922b0fd1a0420148ca2a5f45a51783">getDComponent</a> ()</td></tr>
+<tr class="separator:gac2922b0fd1a0420148ca2a5f45a51783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62096a430c86601ca8bed3fd5d07809b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_d.html#ga62096a430c86601ca8bed3fd5d07809b">getPIDChange</a> ()</td></tr>
+<tr class="separator:ga62096a430c86601ca8bed3fd5d07809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>PID.c - PID controller module. </p>
+<p>PID.c - PID controller module.</p>
+<p>PIDman.c - PID controller management module. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gac2922b0fd1a0420148ca2a5f45a51783"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getDComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>float <a class="el" href="group___p_i_d.html#gac2922b0fd1a0420148ca2a5f45a51783">getDComponent()</a></p>
+<p>This method is used to retrieve the contribution of the D component to the total change requested by the PID controller.</p>
+<dl class="section return"><dt>Returns</dt><dd>The current D contribution to the change requested by the PID controller. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa0469898df39f3825fab1b00a925d7b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getIComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>float <a class="el" href="group___p_i_d.html#gaa0469898df39f3825fab1b00a925d7b8">getIComponent()</a></p>
+<p>This method is used to retrieve the contribution of the I component to the total change requested by the PID controller.</p>
+<dl class="section return"><dt>Returns</dt><dd>The current I contribution to the change requested by the PID controller. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabbaa1e313335edc4c0f70348b7982db5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getPComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>float <a class="el" href="group___p_i_d.html#gabbaa1e313335edc4c0f70348b7982db5">getPComponent()</a></p>
+<p>This method is used to retrieve the contribution of the P component to the total change requested by the PID controller.</p>
+<dl class="section return"><dt>Returns</dt><dd>The current P contribution to the change requested by the PID controller. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga62096a430c86601ca8bed3fd5d07809b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float getPIDChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>float <a class="el" href="group___p_i_d.html#ga62096a430c86601ca8bed3fd5d07809b">getPIDChange()</a></p>
+<p>This method is used to retrieve the total change requested by the PID controller.</p>
+<dl class="section return"><dt>Returns</dt><dd>The current change requested by the PID controller. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad81dd2cc227ebb576a249612dcd6eb7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t getTemperatureTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>uint32_t <a class="el" href="group___p_i_d.html#gad81dd2cc227ebb576a249612dcd6eb7d">getTemperatureTarget()</a></p>
+<p>This method is used to retrieve the current target temperature of the PID controller.</p>
+<dl class="section return"><dt>Returns</dt><dd>The current temperature target. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5af428ce00f41361a218592fee843315"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTemperatureTarget </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>temperature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>void <a class="el" href="group___p_i_d.html#ga5af428ce00f41361a218592fee843315">setTemperatureTarget()</a></p>
+<p>This method is used to set the target temperature of the PID controller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temperature</td><td>is the new target temperature.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga2da744d736fb7d62aabcabf123a6a73e"></a>
 <div class="memitem">
 <div class="memproto">

@@ -1,16 +1,61 @@
 \hypertarget{group___a_d_c}{}\section{A\+DC}
 \label{group___a_d_c}\index{A\+DC@{A\+DC}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___a_d_c_gabe9b1c28165a7071e354bd9d7823ca1a}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+R\+A\+TE}~(500)\hypertarget{group___a_d_c_gabe9b1c28165a7071e354bd9d7823ca1a}{}\label{group___a_d_c_gabe9b1c28165a7071e354bd9d7823ca1a}
+
+\begin{DoxyCompactList}\small\item\em Default A\+DC sample rate, in ms. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group___a_d_c_ga6de35339071e6a8b3739dd8fda53af5a}{get\+A\+D\+C\+Sample\+Rate} ()
+\item 
+void \hyperlink{group___a_d_c_ga2a0f9e472b72054c6ae59882d336f014}{set\+A\+D\+C\+Sample\+Rate} (uint32\+\_\+t sample\+Rate)
 \item 
 void \hyperlink{group___a_d_c_ga1365a853a2f6c0826277c578a30cf503}{task\+A\+D\+Csample} (uint32\+\_\+t A\+D\+C\+\_\+base, uint32\+\_\+t Sample\+\_\+\+Sequencer, uint32\+\_\+t $\ast$A\+D\+C\+\_\+queue)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+A\+D\+Cman.\+c -\/ Communications module.
+
 A\+D\+Ctask.\+c -\/ A\+DC module. 
 
 \subsection{Function Documentation}
+\index{A\+DC@{A\+DC}!get\+A\+D\+C\+Sample\+Rate@{get\+A\+D\+C\+Sample\+Rate}}
+\index{get\+A\+D\+C\+Sample\+Rate@{get\+A\+D\+C\+Sample\+Rate}!A\+DC@{A\+DC}}
+\subsubsection[{\texorpdfstring{get\+A\+D\+C\+Sample\+Rate()}{getADCSampleRate()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t get\+A\+D\+C\+Sample\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_ga6de35339071e6a8b3739dd8fda53af5a}{}\label{group___a_d_c_ga6de35339071e6a8b3739dd8fda53af5a}
+uint32\+\_\+t \hyperlink{group___a_d_c_ga6de35339071e6a8b3739dd8fda53af5a}{get\+A\+D\+C\+Sample\+Rate()}
+
+This method is used to report the current sample rate of the A\+DC, in ms.
+
+\begin{DoxyReturn}{Returns}
+The current sample rate of the A\+DC, in ms. 
+\end{DoxyReturn}
+\index{A\+DC@{A\+DC}!set\+A\+D\+C\+Sample\+Rate@{set\+A\+D\+C\+Sample\+Rate}}
+\index{set\+A\+D\+C\+Sample\+Rate@{set\+A\+D\+C\+Sample\+Rate}!A\+DC@{A\+DC}}
+\subsubsection[{\texorpdfstring{set\+A\+D\+C\+Sample\+Rate(uint32\+\_\+t sample\+Rate)}{setADCSampleRate(uint32_t sampleRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+A\+D\+C\+Sample\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{sample\+Rate}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_ga2a0f9e472b72054c6ae59882d336f014}{}\label{group___a_d_c_ga2a0f9e472b72054c6ae59882d336f014}
+void \hyperlink{group___a_d_c_ga2a0f9e472b72054c6ae59882d336f014}{set\+A\+D\+C\+Sample\+Rate()}
+
+This method is used to set the sample rate of the A\+DC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample\+Rate} & is the new sample rate of the A\+DC, in ms.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
 \index{A\+DC@{A\+DC}!task\+A\+D\+Csample@{task\+A\+D\+Csample}}
 \index{task\+A\+D\+Csample@{task\+A\+D\+Csample}!A\+DC@{A\+DC}}
 \subsubsection[{\texorpdfstring{task\+A\+D\+Csample(uint32\+\_\+t A\+D\+C\+\_\+base, uint32\+\_\+t Sample\+\_\+\+Sequencer, uint32\+\_\+t $\ast$\+A\+D\+C\+\_\+queue)}{taskADCsample(uint32_t ADC_base, uint32_t Sample_Sequencer, uint32_t *ADC_queue)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+A\+D\+Csample (
